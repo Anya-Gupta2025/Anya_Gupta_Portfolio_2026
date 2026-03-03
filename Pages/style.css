@@ -1,3 +1,65 @@
-body {
-    background-color: blue;
+.home {
+    background-color: #f9f6e0;
+}
+
+p {
+    font-family: otherText;
+}
+
+/* Navigation Bar */
+
+    .navigationBar {
+        font-family: otherText;
+        list-style-type: none;
+        margin: 0;
+        padding: 14px 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+    }
+
+    .homeNav {
+        background-color: rgb(211, 208, 142);
+    }
+
+    .title {
+        font-family: mainTitle;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        padding-right: 50px;
+        padding-left: 0px;
+    }   
+
+    .navigationBar li {
+        float: right;
+    }
+
+    ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 20px;
+        text-decoration: none;
+    }
+
+    ul li a:hover {
+        background: linear-gradient(black,black);
+    }
+
+
+
+
+.mainLogo {
+    float: left;
+}
+
+@font-face {
+  font-family: mainTitle; /* set name */
+  src: url(../Fonts/mayonice/Mayonice.ttf); /* url of the font */
+}
+
+@font-face {
+    font-family: otherText;
+    src: url(../Fonts/im_fell_types/IM\ Fell\ French\ Canon/FeFCrm2.ttf);
 }
