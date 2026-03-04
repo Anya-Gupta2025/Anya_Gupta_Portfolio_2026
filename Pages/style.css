@@ -31,11 +31,23 @@
         padding: 14px 14px;
         display: flex;
         justify-content: space-between;
-        align-items: left;
+        align-items: center;
     }
 
     .homeNav {
         background-color: rgb(211, 208, 142);
+    }
+
+    .projectsNav {
+        background-color: #93cfa3;
+    }
+
+    .skillsetNav {
+        background-color: #c4b5e5;
+    }
+
+    .contactMeNav {
+        background-color: #aae0d3;
     }
 
     .mainTitle {
@@ -47,8 +59,13 @@
         padding-left: 0px;
     }   
 
-    .navigationBar li {
+    .navigationBar li a {
         float: right;
+        transition: filter 2s;
+    }
+
+    .navigationBar li a:hover {
+        filter: brightness(80%);
     }
 
     ul li a {
@@ -59,13 +76,15 @@
         text-decoration: none;
     }
 
-    ul li a:hover {
-        background: linear-gradient(black,black);
-        opacity: 4%;
-    }
-
     .mainLogo {
         float: left;
+    }
+
+/* Footer */
+    footer {
+        text-align: right;
+        padding: 14px 14px;
+        background-color: #ec998f;
     }
 
 
