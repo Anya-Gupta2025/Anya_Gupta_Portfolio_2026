@@ -1,10 +1,26 @@
+
+/* Colouring the different pages' backgrounds */
 .home {
     background-color: #f9f6e0;
 }
 
-p {
-    font-family: otherText;
-}
+
+/* Normal Text Styling */
+
+    p {
+        font-family: body;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+
+/* Title styling */
+
+    .title {
+        font-family: title;
+        font-size: 20px;
+    }
+
 
 /* Navigation Bar */
 
@@ -22,7 +38,7 @@ p {
         background-color: rgb(211, 208, 142);
     }
 
-    .title {
+    .mainTitle {
         font-family: mainTitle;
         color: black;
         font-size: 30px;
@@ -45,21 +61,32 @@ p {
 
     ul li a:hover {
         background: linear-gradient(black,black);
+        opacity: 4%;
+    }
+
+    .mainLogo {
+        float: left;
     }
 
 
+/* Fonts */
 
+    @font-face {
+    font-family: mainTitle; 
+    src: url(../Fonts/mayonice/Mayonice.ttf); 
+    }
 
-.mainLogo {
-    float: left;
-}
+    @font-face {
+        font-family: otherText;
+        src: url(../Fonts/im_fell_types/IM\ Fell\ French\ Canon/FeFCrm2.ttf);
+    }
 
-@font-face {
-  font-family: mainTitle; /* set name */
-  src: url(../Fonts/mayonice/Mayonice.ttf); /* url of the font */
-}
+    @font-face {
+        font-family: body;
+        src: url(../Fonts/Classyvogueregular.ttf);
+    }
 
-@font-face {
-    font-family: otherText;
-    src: url(../Fonts/im_fell_types/IM\ Fell\ French\ Canon/FeFCrm2.ttf);
-}
+    @font-face {
+        font-family: title;
+        src: url(../Fonts/wolfpack-Regular.ttf)
+    }
