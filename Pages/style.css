@@ -25,13 +25,16 @@
 /* Navigation Bar */
 
     .navigationBar {
+        position: sticky;       /* keeps navbar visible at top */
+        top: 0; 
         font-family: otherText;
-        list-style-type: none;
-        margin: 0;
-        padding: 14px 14px;
+        list-style: none;
+        padding: 14px;
+        margin: 0px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        background-color: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     }
 
     .homeNav {
@@ -48,6 +51,32 @@
 
     .contactMeNav {
         background-color: #aae0d3;
+    } 
+    
+    .navigationBar li {
+        margin-left: 8px;
+    }
+
+    .navigationBar li a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: filter 2s ease, transform 2s ease;
+
+    }
+
+    .navigationBar li:not(.mainLogo) a:hover {
+        filter: brightness(80%);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    .navigationBar li a:hover {
+        transform: translateY(-2px) scale(1.05);
+    }
+
+    .navigationBar li:not(.mainLogo) a {
+        color: white;
     }
 
     .mainTitle {
@@ -57,27 +86,14 @@
         font-weight: bold;
         padding-right: 50px;
         padding-left: 0px;
-    }   
+    } 
 
-    .navigationBar li a {
-        float: right;
-        transition: filter 2s;
-    }
-
-    .navigationBar li a:hover {
-        filter: brightness(80%);
-    }
-
-    ul li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 20px 20px;
-        text-decoration: none;
+    .navigationBar li a.active {
+        border-bottom: 3px solid rgb(134, 123, 123);
     }
 
     .mainLogo {
-        float: left;
+    margin-right: auto;
     }
 
 /* Footer */
