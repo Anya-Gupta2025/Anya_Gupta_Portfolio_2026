@@ -1,11 +1,35 @@
 
-/* Colouring the different pages' backgrounds */
+/* Colouring the different pages' backgrounds and footers */
 .home {
     background-color: #f9f6e0;
 }
 
 .home footer {
     background-color: #f1d9b9;
+}
+
+.skillset {
+    background-color: #ece0f9;
+}
+
+.skillset footer {
+    background-color: #e6c6f1;
+}
+
+.contact {
+    background-color: #e0f8f9;
+}
+
+.contact footer {
+    background-color: #c6e3f1;
+}
+
+.projects {
+    background-color: #e0f9ec;
+}
+
+.projects footer {
+    background-color: #c6f1d9;
 }
 
 
