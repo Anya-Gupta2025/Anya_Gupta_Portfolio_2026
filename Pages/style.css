@@ -4,12 +4,25 @@
     background-color: #f9f6e0;
 }
 
+.home footer {
+    background-color: #f1d9b9;
+}
+
 
 /* Normal Text Styling */
 
     p {
         font-family: body;
         font-size: 13px;
+        line-height: 1.6;
+    }
+
+
+/* heading style */
+
+    h2 {
+        font-family: mainTitle;
+        font-size: 20px;
         line-height: 1.6;
     }
 
@@ -106,10 +119,15 @@
     footer {
         text-align: center;
         padding: 20px 0;
-        background-color: #ec998f;
+    }
+
+    .myFooter {
+        display: flex;
+        gap: 20px;
     }
 
     .footerStuff {
+        flex: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -121,11 +139,62 @@
         gap: 15px;
     }
 
-    .footerLogos {
-        width: 30px;
-        transition: filter 2s ease, transform 2s ease;
+    .connectionsFooter a {
+        text-decoration: none;
+        color: black;
     }
 
+    .footerLogos {
+        width: 30px;
+    }
+
+    .footerLogos, .connectionsFooter a {
+        transition: transform 2s ease;
+    }
+
+    .footerLogos:hover, .connectionsFooter a:hover {
+        transform: scale(1.2);
+    }
+
+    /* Contact Form */
+        
+        .footerEmailingBox {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .footerEmailingBox form {
+            display: flex;
+            gap: 0px;
+        }
+
+        .footerEmailingBox textarea {
+            width: 200px;
+            height: 15px;
+            padding: 16px;
+            border: 1px solid #ccc;
+            border-radius: 16px 0 0 16px;
+            resize: none;            
+            font-family: body;
+        }
+
+        .footerEmailingBox button {
+            padding: 16px;
+            border: none;
+            background-color: #252525;
+            cursor: pointer;
+            font-size: 14px;
+            color: white;
+            transition: filter 2s ease;
+            border-radius: 0 16px 16px 0;
+        }
+
+        .footerEmailingBox button:hover {
+            filter: brightness(50%);
+        }
 
 /* Fonts */
 
