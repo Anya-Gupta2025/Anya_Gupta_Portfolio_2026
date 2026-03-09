@@ -162,6 +162,72 @@
         flex: 1;
     }
 
+/* Projects Page */
+
+    .projectsBox {
+        padding: 15px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .projectsBox a {
+        text-decoration: none;
+    }
+
+    .eachProject {
+        border: 5px solid white;
+        border-radius: 30px;
+        background-color: #cff6df;
+    }
+
+    .eachProject p{
+        color: black;
+        text-align: center;
+    }
+
+    .projectTitle {
+        font-family: mainTitle;
+        font-size: 30px;
+        padding: 0 50px;
+    }
+
+    .languages {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 16px;
+    }
+
+    .mintSkill, .greenSkill, .darkGreenSkill {
+        flex: 1;
+        padding: 10px;
+        border-radius: 25px;
+        border: 5px solid rgb(255, 255, 255);
+        transition: filter 1s ease, transform 1s ease;
+    }
+
+    .mintSkill:hover, .greenSkill:hover, .darkGreenSkill:hover {
+        transform: scale(1.05);
+        filter: brightness(90%) drop-shadow(rgb(50, 88, 67) 0px 10px 5px);
+    }
+
+    .mintSkill {
+        background-color: #b8dfc2;
+    }
+
+    .greenSkill {
+        background-color: #9bc99d;
+    }
+
+    .darkGreenSkill {
+        background-color: rgb(108, 154, 108);
+    }
+
+
 /* Footer */
     footer {
         text-align: center;
