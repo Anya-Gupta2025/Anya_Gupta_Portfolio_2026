@@ -21,7 +21,7 @@
 }
 
 .contact footer {
-    background-color: #c6e3f1;
+    background-color: #bcddde;
 }
 
 .projects {
@@ -251,6 +251,70 @@
         border: 10px solid white;
         margin: 14px;
         object-fit: cover;
+    }
+
+/* Contact Page */
+
+.contact{
+    font-family: body;
+}
+    
+.contactBox{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactBox form {
+        background-color: white;
+        width: 500px;
+        padding: 30px;
+        font-size: 18px;
+    }
+
+    .messageIcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .messageIcon p{
+        font-size: 25px;
+    }
+
+    .messageIcon span {
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+
+    .contact form input, .contact textarea {
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+        font-family: body;
+    }
+
+    #inputField {
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .sendButton {
+        width: 100px;
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 50px;;
     }
 
 
