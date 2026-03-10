@@ -325,6 +325,82 @@
 
 /* Skillset Page */
 
+    .skillsetBox {
+        padding: 40px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+
+    .eachSkill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid white;
+        border-radius: 30px;
+        background-color: #e3caf1;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        transition: transform 1s ease;
+    }
+
+    .eachSkill:hover {
+        transform: scale(1.05);
+    }
+
+    .eachSkill p{
+        color: black;
+        text-align: center;
+    }
+
+    .skillTitle {
+        font-family: mainTitle;
+        font-size: 30px;
+        padding: 0 50px;
+    }
+
+    .lavenderFeature, .purpleFeature {
+        flex: 1;
+        padding: 10px;
+        border-radius: 25px;
+        border: 3px solid rgb(255, 255, 255);
+    }
+
+    .lavenderFeature {
+        background-color: rgb(225, 210, 242);
+    }
+
+    .purpleFeature {
+        background-color: rgb(185, 162, 211);
+    }
+
+    .skillImageHTML {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .skillImageCSS {
+        width: 75px;
+        margin-bottom: 20px;
+    }
+
+    .skillImageJS {
+        width: 110px;
+        margin-bottom: 20px;
+    }
+
+    .skillImageJava {
+        width: 60px;
+        margin-bottom: 20px;
+    }
+
+    .skillImagePython {
+        width: 110px;
+        margin-bottom: 20px;
+    }
 
 /* Footer */
     footer {
