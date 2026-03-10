@@ -314,7 +314,13 @@
         color: white;
         font-size: 16px;
         padding: 10px;
-        border-radius: 50px;;
+        border-radius: 50px;
+        transition: transform 1s ease, filter 1s ease;  
+    }
+
+    .sendButton:hover {
+        transform: scale(1.05);
+        filter: brightness(80%);
     }
 
 
