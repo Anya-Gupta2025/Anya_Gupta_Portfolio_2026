@@ -402,6 +402,11 @@
         margin-bottom: 20px;
     }
 
+    .skillImageBlender {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
 /* Each Project Page */
     .projectDescription {
         font-family: body;
